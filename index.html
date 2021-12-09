@@ -12,25 +12,22 @@
     let gotIt = false;
     let guess = prompt("Guess a number between 1 and 10");
     let counter = 0;
-    /*
-    To increment counter you can do this:
+    /*To increment counter you can do this:
     counter ++;
-
     or this:
-
     counter+=
-
     or this
-
     counter = counter +1
     */
-
     while(gotIt == false){
+            counter ++;
         if(num == guess){
-            alert("You got it! You guessed the correct number correctly!");
+       alert("You got it! You guessed the correct number correctly! " + "You guessed " + counter + " times.");
             gotIt = true;
-        }else{
-            guess = prompt("That was wrong...guess again.");
+        }else if(guess > prompt){
+          guess = prompt ("The number is " + "less than " + guess);
+        }else(guess < prompt);{
+             guess = prompt ("The number is " + "greater than " + guess);
         }
   
     }
@@ -45,5 +42,3 @@
 </body>
 
 </html>
-
-
